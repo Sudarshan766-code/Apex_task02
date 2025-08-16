@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Projects Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <nav>
+    <div class="logo">Apex planet Software </div>
+    <div class="links">
+      <a href="#contact">Contact Form</a>
+      <a href="#layout">Responsive Layout</a>
+      <a href="#todo">To-Do List</a>
+    </div>
+  </nav>
+
+  
+  <section id="contact" class="fade-in">
+    <h2>Contact Form</h2>
+    <div class="card">
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <div class="error" id="nameError"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <div class="error" id="emailError"></div>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+        <div class="error" id="messageError"></div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <section id="layout" class="fade-in">
+    <h2>Responsive Layout</h2>
+    <div class="container">
+      <div class="box slide-in-left">Sidebar</div>
+      <div class="box slide-in-up">Main Content</div>
+      <div class="box slide-in-right">Extra Section</div>
+    </div>
+  </section>
+
+  
+  <section id="todo" class="fade-in">
+    <h2>To-Do List</h2>
+    <div class="todo">
+      <input type="text" id="taskInput" placeholder="Enter new task">
+      <button class="btn-add" onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 ApexPlanet software PVT LTD  | Built with by Sudarshan G</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
